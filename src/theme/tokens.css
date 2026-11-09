@@ -1,0 +1,114 @@
+/*
+ * HeloZy landing page tokens — the ONLY place colours, radii, fonts and shadows are defined here.
+ * A copy of the app's tokens (main repo: packages/ui/src/theme/tokens.css) so the product
+ * visuals match the app, plus the "Marketing site" block for the dark page.
+ * If a brand colour changes in the app, copy it here too.
+ */
+:root {
+  /* Surfaces */
+  --bg: #f3f3f6; /* app background */
+  --surface: #ffffff; /* cards */
+  --chip: #ececf0; /* pill buttons, round icon buttons */
+  --chip-hover: #e2e2e8;
+  --border: #e4e4ea;
+
+  /* Text */
+  --text: #111111;
+  --text-muted: #63636b; /* darkened from the sample's #77777f to meet WCAG AA (4.5:1) */
+  --text-subtle: #a3a3ab;
+
+  /* Brand */
+  --primary: #9ea1d8; /* lavender: active nav pill, bars, "Prospect" badge */
+  --primary-hover: #8f92ce;
+  --primary-fg: #111111; /* text on --primary; white on lavender fails WCAG AA contrast */
+  --primary-soft: #dcddf4; /* lavender badge background */
+  --primary-strong: #5357a6; /* lavender for text and links on light surfaces (WCAG AA) */
+  --accent: #cfee78; /* lime: charts, progress, highlights */
+  --accent-hover: #c2e463;
+  --accent-fg: #111111;
+  --accent-soft: #f2f9d3; /* lime badge background */
+  --ink: #111111; /* black pills ("+6", tooltips) */
+  --ink-fg: #ffffff;
+
+  /* Class cover colours (soft tints; "lavender" and "lime" reuse the brand soft tones) */
+  --tint-sky: #d9ecf7;
+  --tint-peach: #fbe3d3;
+  --tint-mint: #d8f1e4;
+  --tint-rose: #f8dbe4;
+
+  /* Live classroom: video reads best on a dark surround, so the room uses its own stage colours */
+  --stage: #16161b;
+  --stage-tile: #25252d;
+  --stage-raised: #30303a;
+  --stage-fg: #f4f4f6;
+  --stage-muted: #a3a3ab;
+
+  /* Whiteboard: pen colours (also used on chalkboard), board papers and sticky notes */
+  --board-pen-black: #1c1c22;
+  --board-pen-grey: #6b6b75;
+  --board-pen-blue: #2563eb;
+  --board-pen-red: #dc2626;
+  --board-pen-green: #16a34a;
+  --board-pen-orange: #ea580c;
+  --board-pen-purple: #7c3aed;
+  --board-pen-pink: #db2777;
+  --board-pen-brown: #92400e;
+  --board-pen-teal: #0d9488;
+  --board-pen-yellow: #facc15;
+  --board-pen-white: #ffffff;
+  --board-paper-white: #ffffff;
+  --board-paper-cream: #fdf8ec;
+  --board-paper-sky: #eef5fc;
+  --board-paper-mint: #eef8f2;
+  --board-paper-grey: #f4f4f6;
+  --board-paper-chalkboard: #24392f;
+  --board-line: #e3e5ec;
+  --board-line-major: #c9ccd8;
+  --board-chalk-line: #3a5246;
+  --board-chalk-line-major: #4c6658;
+  --board-sticky-yellow: #fff3a8;
+  --board-sticky-pink: #ffd6e5;
+  --board-sticky-blue: #d4e8ff;
+  --board-sticky-green: #d6f5d6;
+  --board-sticky-orange: #ffe0bf;
+  --board-selection: #6f73c4;
+  --board-laser: #ff3b30;
+
+  /* Marketing site (apps/landing): dark page, the light product glows on it. Same brand colours as the flyers */
+  --site-bg: #0c0c0f;
+  --site-raised: #16161b;
+  --site-card: #1b1b21;
+  --site-line: #2c2c35;
+  --site-fg: #ffffff;
+  --site-muted: #8b8b95;
+  --site-glow-lavender: rgb(83 87 166 / 0.35);
+  --site-glow-lime: rgb(207 238 120 / 0.14);
+  --site-glass: rgb(22 22 27 / 0.66);
+  --site-glass-light: rgb(255 255 255 / 0.06); /* frosted cards on the dark page */
+  --site-glass-edge: rgb(255 255 255 / 0.12); /* their borders and top highlights */
+  --site-dot: rgb(255 255 255 / 0.07); /* dotted texture in the hero box */
+  --font-hand: 'Caveat Variable', 'Caveat', cursive; /* sticky-note handwriting */
+  --font-math: Georgia, 'Times New Roman', serif; /* typed equations on the board */
+  --font-display:
+    'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Status */
+  --success: #3cb84f; /* trend arrows */
+  --danger: #cf3238; /* readable as text and under white text (WCAG AA) */
+  --danger-soft: #fde8e8;
+  --warning: #e8a33d;
+  --focus-ring: #6f73c4;
+
+  /* Shape */
+  --radius-card: 28px;
+  --radius-panel: 20px;
+  --radius-field: 16px;
+  --radius-pill: 999px;
+
+  /* Type */
+  --font-sans: 'Inter Variable', 'Inter', ui-sans-serif, system-ui, 'Segoe UI', sans-serif;
+
+  /* Elevation (the sample is mostly flat) */
+  --shadow-card: 0 1px 2px rgb(17 17 17 / 0.04);
+  --shadow-pop: 0 12px 32px rgb(17 17 17 / 0.12);
+}
